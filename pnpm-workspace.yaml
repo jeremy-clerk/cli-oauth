@@ -1,0 +1,5 @@
+packages:
+  - packages/*
+onlyBuiltDependencies:
+  - '@clerk/shared'
+  - sqlite3

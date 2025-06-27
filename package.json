@@ -1,0 +1,19 @@
+{
+  "name": "clerk-oauth-cli-example",
+  "scripts": {
+    "dev:cli": "pnpm --filter @clerk-oauth/cli dev",
+    "dev:api": "pnpm --filter @clerk-oauth/api dev",
+    "dev": "pnpm run dev:api & pnpm run dev:cli",
+    "install:all": "pnpm install",
+    "build": "pnpm -r build",
+    "clean": "pnpm -r clean && rm -rf node_modules"
+  },
+  "engines": {
+    "node": ">=22.0.0",
+    "pnpm": ">=10.0.0"
+  },
+  "packageManager": "pnpm@10.5.2",
+  "devDependencies": {
+    "prettier": "^3.6.2"
+  }
+}
