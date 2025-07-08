@@ -28,7 +28,7 @@ export async function discoverOpenIDConfiguration(domain: string): Promise<OpenI
     
     configCache.set(domain, { config, timestamp: Date.now() });
     
-    return config;
+    return config
   } catch (error) {
     console.warn('Failed to discover OpenID configuration, using defaults:', error);
     return getDefaultClerkConfiguration(domain);
